@@ -1,0 +1,151 @@
+{% extends "base.html" %} {% block content %}
+<div
+  style="
+    height: 55vh;
+    background-image: url(https://coolwallpapers.me/picsup/5516264-curtain-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+  "
+  class="position-relative w-100"
+>
+  <!-- hero -->
+  <div
+    class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
+    style="
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    "
+  >
+    <div class="container center text-center">
+      <h1 class="fw-bold">Katalog Produk</h1>
+      <hr />
+      <p class="lead fst-italic">
+        Pilihan Produk-produk yang dapat anda kustomisasi.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container p-3 text-white">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <a href="{% url "gorden" %}" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Gorden</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="{% url "rollet" %}" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Rollet</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Rail</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <a href="" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Bracket</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Tali Gorden</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" style="text-decoration: none; color: black">
+        <div class="card shadow-sm">
+          <img
+            src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+            alt=""
+            srcset=""
+          />
+
+          <div class="card-body">
+            <h3>Hook</h3>
+            <hr />
+            <p class="card-text">
+              Ini Adalah Deskripsi singkat mengenai produk dengan gambar diatas.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content %}

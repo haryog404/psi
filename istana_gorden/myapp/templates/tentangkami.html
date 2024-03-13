@@ -1,0 +1,88 @@
+{% extends "base.html" %} {% block content %}
+<div
+  style="
+    height: 75vh;
+    background-image: url(https://coolwallpapers.me/picsup/5516264-curtain-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+  "
+  class="position-relative w-100"
+>
+  <!-- hero -->
+  <div
+    class="text-white d-flex flex-column align-items-start justify-content-center h-100"
+    style="
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    "
+  >
+    <div class="container text-center">
+      <div class="col-md justify-content-center">
+        <!-- on small screens remove display-4 -->
+        <h1 class="mb-4 mt-2 display-4 fw-bold">Tentang Kami</h1>
+        <hr />
+        <p style="color: #bbb" class="fst-italic">
+          Anda dapat menghubungi kami dari informasi terlampir
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid row m-5">
+      <div class="container col-4 text-center">
+        <!-- hover background-color: white; color: black; -->
+        <p class="h3 fw-semibold">ISTANA GORDEN</p>
+        <p class="">
+          Merupakan usaha di bidang interior yang menyajikan jasa pembuatan
+          gorden custom, wallpaper, blinds serta menjual aksesoris gorden secara
+          terpisah. Berlokasi di Jl. Raya G.Kawi, Desa Ngajum, Kecamatan Ngajum,
+          Kabupaten Malang
+        </p>
+      </div>
+      <div class="container col-8 text-center">
+        <!-- hover background-color: white; color: black; -->
+        <a href="#" class="btn btn-outline-light">Google Maps API goes here</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5 text-center text-white">
+  <div class="row py-4" id="layanan-kami">
+    <div class="col-lg">
+      <div style="text-align: left" class="p-2 h2 m-2 fw-bold">
+        LAYANAN KAMI
+      </div>
+      <div style="text-align: left" class="p-2 m-2">
+        Istana Gorden melayani tidak hanya penjualan gorden dan aksesoris gorden
+        tetapi juga menerima jasa pengantaran gorden dan pemasangan gorden pada
+        daerah pelayanan.
+      </div>
+    </div>
+  </div>
+  <div class="row py-4" id="bagaimana-kami-bekerja">
+    <div class="col-lg">
+      <div style="text-align: left" class="p-2 h2 m-2 fw-bold">
+        BAGAIMANA KAMI BEKERJA?
+      </div>
+      <div style="text-align: left" class="p-2 m-2">
+        Pelanggan akan diberikan pilihan untuk desain motif, bahan , dan warna
+        dari gorden yang akan dipasang, setelah selesai memilih pelanggan akan
+        melakukan negosiasi dengan pihak Istana Gorden untuk memastikan ukuran
+        gorden dan lokasi pengiriman dan pemasangan.
+      </div>
+    </div>
+  </div>
+  <div class="row py-4" id="daerah-pelayanan">
+    <div class="col-lg">
+      <div style="text-align: left" class="p-2 h2 m-2 fw-bold">
+        DAERAH PELAYANAN
+      </div>
+      <div style="text-align: left" class="p-2 m-2">
+        Daerah pelayanan Istana Gorden untuk saat ini mencakup area Kabupaten dan Kota Malang dan sekitarnya.
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

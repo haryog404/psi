@@ -1,0 +1,134 @@
+{% extends "base.html" %} {% block content %}
+<div
+  style="
+    height: 75vh;
+    background-image: url(https://coolwallpapers.me/picsup/5516264-curtain-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+  "
+  class="position-relative w-100"
+>
+  <!-- hero -->
+  <div
+    class="position-absolute text-white d-flex flex-column align-items-start justify-content-center h-100"
+    style="
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+    "
+  >
+    <div class="container mt-auto">
+      <div class="col-md-6 justify-content-center">
+        <!-- on small screens remove display-4 -->
+        <h1 class="mb-4 mt-2 display-4 font-weight-bold">
+          ISTANA <span style="color: #9b5de5">GORDEN</span>
+        </h1>
+        <p style="color: #bbb">
+          Kain Berkualitas, Desain Berkelas, Rumah Menawan
+        </p>
+      </div>
+    </div>
+    <div class="container mt-auto mb-5 text-center">
+      <!-- hover background-color: white; color: black; -->
+      <a href="#" class="btn btn-outline-light">Mulai Menjelajah!</a>
+    </div>
+  </div>
+</div>
+
+<div class="container p-5 text-center text-white">
+  <!-- Three columns of text below the carousel -->
+  <div class="row">
+    <div class="col-lg-3">
+      <div
+        style="border-left: solid #bbb; text-align: left"
+        class="p-2 h2 mt-5"
+      >
+        Prosedur Pemesanan
+      </div>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <svg
+        class="bd-placeholder-img rounded-circle mb-3"
+        width="140"
+        height="140"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Placeholder: 140x140"
+        preserveAspectRatio="xMidYMid slice"
+        focusable="false"
+      >
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777" />
+        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+      </svg>
+      <p>Pilih produk yang anda inginkan</p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <svg
+        class="bd-placeholder-img rounded-circle mb-3"
+        width="140"
+        height="140"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Placeholder: 140x140"
+        preserveAspectRatio="xMidYMid slice"
+        focusable="false"
+      >
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777" />
+        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+      </svg>
+      <p>Isi kustomisasi produk pilihan anda</p>
+    </div>
+    <!-- /.col-lg-4 -->
+    <div class="col-lg-3">
+      <svg
+        class="bd-placeholder-img rounded-circle mb-3"
+        width="140"
+        height="140"
+        xmlns="http://www.w3.org/2000/svg"
+        role="img"
+        aria-label="Placeholder: 140x140"
+        preserveAspectRatio="xMidYMid slice"
+        focusable="false"
+      >
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#777" />
+        <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+      </svg>
+      <p>Konfirmasi pesanan melalui WhatsApp</p>
+    </div>
+    <!-- /.col-lg-4 -->
+  </div>
+  <!-- /.row -->
+</div>
+
+<div class="container p-6 center text-center text-white">
+  <h1>Galeri Foto</h1>
+  <hr />
+  <div class="gallery py-2">
+    <img
+      src="https://picsum.photos/id/1040/300/300"
+      alt="a house on a mountain"
+    />
+    <img
+      src="https://picsum.photos/id/136/300/300"
+      alt="big rocks with some trees"
+    />
+    <img src="https://picsum.photos/id/110/300/300" alt="a cool landscape" />
+  </div>
+  <div class="gallery">
+    <img
+      src="https://picsum.photos/id/1040/300/300"
+      alt="a house on a mountain"
+    />
+    <img src="https://picsum.photos/id/106/300/300" alt="sime pink flowers" />
+    <img src="https://picsum.photos/id/110/300/300" alt="a cool landscape" />
+  </div>
+</div>
+<br />
+{% endblock %}
