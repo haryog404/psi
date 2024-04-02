@@ -1,14 +1,27 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <div class="container-fluid p-5 text-white">
   <div class="row">
-    <p class="h1 fw-bold">{{name}}</p>
+    <p class="h1 fw-bold" id="name">{{ item.nama }}</p>
     <hr />
-    <p class="fst-italic">Deskripsi singkat produk</p>
+    <p class="fst-italic">
+      {% if item.jenis_produk_id == 2 %}
+      Pembelian paket termasuk aksesori yang ditampilkan di gambar (+pemasangan area malang raya dan sekitarnya).<br>
+      *Ukuran produk Gorden berupa panjang x lebar (cth: 3 x 2) 
+      {% elif item.jenis_produk_id == 3 or item.jenis_produk_id == 5 %}
+      Pembelian sudah termasuk Bracket dan Tutup serta sekrup. 
+      {% elif item.jenis_produk_id == 6 %}
+      Pembelian sudah termasuk kit pemasangan. 
+      {% elif item.jenis_produk_id == 7 %}
+      pembelian wallpaper dalam bentuk roll. setiap roll berukuran 5 meter. a
+      {% else %}
+      -
+      {% endif %}
+    </p>
   </div>
   <div class="row">
     <div class="col p-3">
       <img
-        src="https://img.interiorgoodsdirect.com/image-system/zoom/venetian/venetian/window-half-1600/touched_by_design_premier_anthracite.jpg"
+        src="{{ item.gambar.url }}"
         width="400"
         height="400"
         class="rounded mx-auto d-block"
@@ -16,7 +29,7 @@
     </div>
     <div class="col p-3">
       <div class="row p-1 h2 fw-bold">Kustomisasi</div>
-      <div class="row p-1">Ukuran Produk (dalam meter persegi)</div>
+      <div class="row p-1">Ukuran Produk</div>
       <div class="row p-1"><input type="text" id="ukuran" name="ukuran" /></div>
       <div class="row p-1">Pilih Warna yang tersedia</div>
       <div class="row p-1"><input type="text" id="warna" name="warna" /></div>
@@ -41,24 +54,29 @@
   </div>
 </div>
 <script>
+  const getNama = document.getElementById("name");
   const getUkuran = document.getElementById("ukuran");
   const getWarna = document.getElementById("warna");
   const getKustomisasi = document.getElementById("kustomisasi");
   const link = document.getElementById("button");
   link.addEventListener("click", function () {
+    const nama = getNama.innerHTML;
     const ukuran = getUkuran.value;
     const warna = getWarna.value;
     const kustomisasi = getKustomisasi.value;
     function encodeForUrl(text) {
       return encodeURIComponent(text);
     }
+    const encodedNama = encodeForUrl(nama);
     const encodedUkuran = encodeForUrl(ukuran);
     const encodedWarna = encodeForUrl(warna);
     const encodedKustomisasi = encodeForUrl(kustomisasi);
     const refLink =
-      "https://wa.me/+6285810116993?text=Saya+ingin+memesan+gorden+dengan+ukuran+*" +
+      "https://wa.me/+6285810116993?text=Saya+ingin+memesan+*"+
+      encodedNama +
+      "*+dengan+ukuran+*" +
       encodedUkuran +
-      "*+meter+persegi+dan+warna+*" +
+      "*+dan+warna+*" +
       encodedWarna +
       "*+dan+kustomisasi+sebagai+berikut+:+*" +
       encodedKustomisasi+ "*";
